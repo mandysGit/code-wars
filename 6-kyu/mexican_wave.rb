@@ -81,10 +81,3 @@ def wave(str)
   end
   result
 end
-
-=begin
-- rookie mistake. Cannot do this: 
-- On each Iteration
-- str[index].upcase!
-- result << str
-=end
