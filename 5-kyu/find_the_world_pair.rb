@@ -34,33 +34,9 @@ Algo:
 - Return result
 =end
 
-# def fn(arr, str)
-#   result = []
-#   combination = arr.combination(2).to_a
-
-#   combination.each do |combo|
-#     if combo.join == str
-#       result << combo[0] << combo[1]
-#       result << [arr.index(combo[0]), arr.index(combo[1])]
-#       break
-#     elsif combo.reverse.join == str
-#       result << combo[0] << combo[1]
-#       result << [arr.index(combo[1]), arr.index(combo[0])]
-#       break
-#     end
-#   end
-#   
-#   return nil if result.empty?
-#   result
-# end
-
 def fn(arr, str)
   result = []
-  substrings = arr.select do |word|
-    str.include?(word)
-  end
-
-  combination = substrings.combination(2).to_a
+  combination = arr.combination(2).to_a
 
   combination.each do |combo|
     if combo.join == str
@@ -74,34 +50,9 @@ def fn(arr, str)
     end
   end
 
-  return nil if result.empty?
   result
 end
 
-def fn(arr, str)
-  result = []
-  substrings = arr.select do |word|
-    str.include?(word) && (word[0] == str[0] || str[-1] ==word[-1])
-
-  end
-
-  combination = substrings.combination(2).to_a
-
-  combination.each do |combo|
-    if combo.join == str
-      result << combo[0] << combo[1]
-      result << [arr.index(combo[0]), arr.index(combo[1])]
-      break
-    elsif combo.reverse.join == str
-      result << combo[0] << combo[1]
-      result << [arr.index(combo[1]), arr.index(combo[0])]
-      break
-    end
-  end
-
-  return nil if result.empty?
-  result
-end
 
 p fn(['super','bow','bowl','tar','get','book','let'], "superbowl")      ==  ['super','bowl',   [0,2]]
 p fn(['bow','crystal','organic','ally','rain','line'], "crystalline")   ==  ['crystal','line', [1,5]]
