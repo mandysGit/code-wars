@@ -81,7 +81,7 @@ end
 def fn(arr, str)
   result = []
   substrings = arr.select do |word|
-    str.include?(word) && (word[0] == str[0] || str[-1] ==word[-1])
+    str.include?(word) && (word[0] == str[0] || str[-1] ==word[-1])s
 
   end
 
