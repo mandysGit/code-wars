@@ -15,7 +15,8 @@ The minimum year number that is strictly larger than the input number year and a
 Problem:
 - Given a year number
 - Find the minimum year larger than the given year that has all unique digits
-- Check for unique digits
+  - Increment the year by 1 to get a new year
+  - Check new year for unique digits 
 
 Input: Integer
 Output: Integer
