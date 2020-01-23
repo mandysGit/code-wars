@@ -1,4 +1,5 @@
 =begin
+https://www.codewars.com/kata/57d165ad95497ea150000020/ruby
 - The wilderness zoo needs to prove it has x number of mating pairs of bears.
 - check within string (s) to find all of the mating pairs
 - return a string containing only them.
