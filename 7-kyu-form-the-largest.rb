@@ -4,7 +4,7 @@ https://www.codewars.com/kata/5a4ea304b3bfa89a9900008e
 Given a number, Return The Maximum number that could be formed from the digits of the number given.
 
 Notes:
-- Only Natural numbers passed to the function, numbers Contain digits [0:9] inclusive
+- Only Natural numbers passed to the method, numbers Contain digits [0:9] inclusive
 - Digit Duplications could occur, So also consider it when forming the Largest
 
 Problem:
